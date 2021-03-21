@@ -54,7 +54,7 @@ def maintain_invoice(request, token, amount):
     invoice.save() 
     # save invoice detail 
     for cart_item in cart_items: 
-        invoice_detail = InvoiceDetail( 
+        invoice_detail = InvoiceDetails( 
         invoice = invoice, 
         product = cart_item.product, 
         quantity = cart_item.quantity, 
